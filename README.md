@@ -44,7 +44,7 @@ Instead of changing opacity one layer at a time, you simply select multiple rast
      2.**Run the Plugin** ![icon icon ](icon.png)
     - From the menu: **Raster Tools → Set Raster Transparency (Selected Layers)**  
     - Or click the plugin **toolbar icon**
-     3. **Set Transparency**  
+     3.**Set Transparency**  
    - A dialog box will appear asking:  
      > Enter transparency (0–100%):
    - Enter a value between **0% (fully opaque)** and **100% (fully transparent)**.  
@@ -81,7 +81,7 @@ The plugin uses **QMessageBox** to show feedback direcctly in Qgis :
 ## Limitations & Notes
 
 - The plugin currently supports:
-  - Only **raster layers** (`QgsRasterLayer`).
+- Only **raster layers** (`QgsRasterLayer`).
 - Any **non-raster layers** in the selection are ignored.
 
 ---
