@@ -38,20 +38,23 @@ Instead of changing opacity one layer at a time, you simply select multiple rast
 
 
      ## Usage
-     1.**Prepare your Data**
+
+     1. **Prepare your Data**
      -Select multiple raster Layers.
      -Non-raster Layers (vector layers,groups etc ) wil be ignored.
-     2.**Run the Plugin** ![icon icon ](icon.png)
+
+     2. **Run the Plugin** ![icon icon ](icon.png)
     - From the menu: **Raster Tools → Set Raster Transparency (Selected Layers)**  
     - Or click the plugin **toolbar icon**
-     3.**Set Transparency**  
-   - A dialog box will appear asking:  
+
+     3. **Set Transparency**  
+    - A dialog box will appear asking:  
      > Enter transparency (0–100%):
    - Enter a value between **0% (fully opaque)** and **100% (fully transparent)**.  
    - Click **OK** to apply the transparency to all selected raster layers.  
    - Click **Cancel** if you do not want to make any changes.
 
-4. **View Changes**  
+     4. **View Changes**  
    - All selected raster layers will update immediately.  
    - The map canvas refreshes automatically with the new opacity values.
 
