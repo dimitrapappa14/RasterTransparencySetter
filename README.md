@@ -31,6 +31,22 @@ Instead of changing opacity one layer at a time, you simply select multiple rast
    - **macOS**  
      `~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/`
 
+3. Restart QGIS.
+4. Go to **Plugins → Manage and Install Plugins…**
+5. In the **Installed** tab, find **RasterTransparencySetter** and check it to enable.         
+     -----
+
+
+     ## Usage
+     1.**Prepare your Data**
+     -Select multiple raster Layers.
+     -Non-raster Layers (vector layers,groups etc ) wil be ignored.
+
+    2.**Run the Plugin** ![icon icon ](icon.png)
+- From the menu: **Raster Tools → Set Raster Transparency (Selected Layers)**  
+- Or click the plugin **toolbar icon** (the one from `icon.png`).
+
+
 ### Messages & Error Handling 
 
 The plugin uses **QMessageBox** to show feedback direcctly in Qgis :
@@ -43,32 +59,27 @@ The plugin uses **QMessageBox** to show feedback direcctly in Qgis :
 
 -**Input Dialog:** 
 -Uses 'QInputDialog.getInt' to request a ytreansparency value between **0-100%**.
--If 
+-If the user click **Cancel***, no changes are applied
 
+- **Rendering update:**
+  - After updating opacity, each raster layer is refreshed with:
+    ```python
+    layer.triggerRepaint()
+    ```
 
+---
 
+## Limitations & Notes
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- The plugin currently supports:
+  - Only **raster layers** (`QgsRasterLayer`).
+- Any **non-raster layers** in the selection are ignored.
+- Transparency is applied via the layer’s renderer:
+  ```python
 ---
 ## License
 This plugin is released under the GPL-3.0 license.
 ---
-
 ## Support and Contribution
 - **Homepage**: [https://github.com/Consortis-Geospatial],(https://github.com/Consortis-Geospatial)
 - **Author**: Dimitra Pappa -Consortis Geospatial
