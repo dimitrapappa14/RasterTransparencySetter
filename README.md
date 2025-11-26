@@ -31,7 +31,47 @@ Instead of changing opacity one layer at a time, you simply select multiple rast
    - **macOS**  
      `~/Library/Application Support/QGIS/QGIS3/profiles/default/python/plugins/`
 
-3. Make sure the plugin folder name is something like:
+### Messages & Error Handling 
 
-   ```text
-   RasterTransparencySetterwithclick
+The plugin uses **QMessageBox** to show feedback direcctly in Qgis :
+
+-**Info Messages:**
+- If **no layers** are seleceted in the Layers Panel:
+- “Please select one or more layers first.”
+-If **none of the selected layers are raster layers**:
+-“Please select one or more layers first.”
+
+-**Input Dialog:** 
+-Uses 'QInputDialog.getInt' to request a ytreansparency value between **0-100%**.
+-If 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+## License
+This plugin is released under the GPL-3.0 license.
+---
+
+## Support and Contribution
+- **Homepage**: [https://github.com/Consortis-Geospatial],(https://github.com/Consortis-Geospatial)
+- **Author**: Dimitra Pappa -Consortis Geospatial
+- **email**: pappa@consortis.gr
+- **Repository**: [https://github.com/Consortis-Geospatial/SnapIntegrator],(https://github.com/Consortis-Geospatial/SnapIntegrator)
+- **Issues Tracker**: [https://github.com/Consortis-Geospatial/SnapIntegrator],(https://github.com/Consortis-Geospatial//SnapIntegrator)
